@@ -29,4 +29,4 @@ cp "/home/ahk/backup/config/server2_config_full_$6-$2-$3.tgz" "/home/ahk/backup/
 cp "/home/ahk/backup/database/Owncloud_$6-$2-$3.sql.gz" "/home/ahk/backup/current"
 cp "/home/ahk/backup/database/roundcube_$6-$2-$3.sql.gz" "/home/ahk/backup/current"
 
-tar -zcvf "/home/ahk/backup/complete_$6-$2-$3.tar.gz" "/home/ahk/backup/current"
+tar -zcvf "/home/ahk/backup/server2_complete_$6-$2-$3.tar.gz" "/home/ahk/backup/current"
