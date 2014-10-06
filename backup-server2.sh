@@ -8,7 +8,7 @@ if [ "$HOSTNAME" != "xdk9r3i7" ]; then
     exit;
 fi
 
-DATA="/home/ahk/certificates /root"
+DATA="/home/ahk/certificates /root /var/www/dokuwiki/data"
 CONFIG="/etc"
 
 set $(date)
@@ -23,7 +23,7 @@ gzip "/home/ahk/backup/database/Owncloud_$6-$2-$3.sql"
 gzip "/home/ahk/backup/database/roundcube_$6-$2-$3.sql"
 rm "/home/ahk/backup/database/*.sql"
 
-rm "/home/ahk/backup/current/*"
+rm /home/ahk/backup/current/*
 cp "/home/ahk/backup/data/server2_data_full_$6-$2-$3.tgz" "/home/ahk/backup/current"
 cp "/home/ahk/backup/config/server2_config_full_$6-$2-$3.tgz" "/home/ahk/backup/current"
 cp "/home/ahk/backup/database/Owncloud_$6-$2-$3.sql.gz" "/home/ahk/backup/current"

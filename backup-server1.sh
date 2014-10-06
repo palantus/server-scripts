@@ -15,7 +15,7 @@ set $(date)
 tar cfz "/home/ahk/backup/data/server2_data_full_$6-$2-$3.tgz" $DATA
 tar cfz "/home/ahk/backup/config/server2_config_full_$6-$2-$3.tgz" $CONFIG
 
-rm "/home/ahk/backup/current/*"
+rm /home/ahk/backup/current/*
 cp "/home/ahk/backup/data/server2_data_full_$6-$2-$3.tgz" "/home/ahk/backup/current"
 cp "/home/ahk/backup/config/server2_config_full_$6-$2-$3.tgz" "/home/ahk/backup/current"
 
