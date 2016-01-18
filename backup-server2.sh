@@ -30,3 +30,5 @@ cp "/home/ahk/backup/database/Owncloud_$6-$2-$3.sql.gz" "/home/ahk/backup/curren
 cp "/home/ahk/backup/database/roundcube_$6-$2-$3.sql.gz" "/home/ahk/backup/current"
 
 tar -zcvf "/home/ahk/backup/server2_complete_$6-$2-$3.tar.gz" "/home/ahk/backup/current"
+
+aws s3 cp "/home/ahk/backup/server2_complete_$6-$2-$3.tar.gz" s3://dk.ahkpro.backup.webserver
