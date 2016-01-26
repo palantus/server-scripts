@@ -21,4 +21,4 @@ cp "/home/ahk/backup/config/server2_config_full_$6-$2-$3.tgz" "/home/ahk/backup/
 
 tar -zcvf "/home/ahk/backup/server1_complete_$6-$2-$3.tar.gz" "/home/ahk/backup/current"
 
-aws s3 cp "/home/ahk/backup/server1_complete_$6-$2-$3.tar.gz" s3://dk.ahkpro.backup.webserver
+/usr/local/bin/aws s3 cp "/home/ahk/backup/server1_complete_$6-$2-$3.tar.gz" s3://dk.ahkpro.backup.webserver
